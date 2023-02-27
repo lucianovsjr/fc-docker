@@ -1,6 +1,6 @@
 ## Comandos bastante utilizados no Dockerfile
 
-`workerdir`:
+`workdir`:
 Diretório de trabalho do container.
 Cria uma pasta dentro do container e te coloca lá dentro por padrão.
 
