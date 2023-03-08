@@ -1,6 +1,6 @@
 ## Otimizar imagens
 
-Em comum quando estivermos desenvolvendo utilizarmos uma imagem que possui muitos recursos.
+É comum quando estivermos desenvolvendo utilizarmos uma imagem que possui muitos recursos.
 
 Já em produção é recomendado ter uma imagem mais enxuta.
 Será mais rápido para subir e baixar por conta do tamanho.
@@ -15,7 +15,7 @@ Temos o stage inicial que gera uma imagem e outro que otimiza.
 Criar o Dockerfile de produção. `/laravel/Dockerfile.prod`
 
 `COPY --from=builder /var/www/laravel .`
-Copia o conteudo da pasta "/var/www/laravel" do build "builder" para a pasta que está no momento.
+Copia o conteudo da pasta "/var/www/laravel" do stage "builder" para a pasta do stage que está no momento.
 
 Gerar uma imagem de produção: `docker build -t lucianovsjr/fc-php:prod laravel/ -f laravel/Dockerfile.prod`
 

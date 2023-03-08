@@ -1,5 +1,5 @@
 ## Nginx como proxy reverso
-No nginx temos os arquivos .conf na qual iremos configuras os domínios.
+No nginx temos os arquivos .conf na qual iremos configurar os domínios.
 
 `mkdir /var/www/html -p`
 -p: Criar diretorio e sub-diretorios caso não exista
